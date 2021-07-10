@@ -18,6 +18,12 @@ function add() {
   const inicialResult = currentResult;
   currentResult += enteredNumber;
   createAndWriteOutput( `+`, inicialResult, enteredNumber)
+  const logEntry = {
+    operation: 'ADD',
+    prevResult: initialResult,
+    number: enteredNumber,
+    result: currentResult,
+  };
   logEntries.push(enteredNumber);
   console.log(logEntries);
 
